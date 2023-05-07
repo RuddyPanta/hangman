@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="546.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ruddy.view.ViewJavaFX">
+    <Label contentDisplay="CENTER" text="HANGMAN" textAlignment="JUSTIFY">
+        <font>
+            <Font name="System Italic" size="38.0"/>
+        </font>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+    </Label>
+
+    <Label fx:id="wordValueLabel" accessibleRole="TEXT_AREA" alignment="CENTER" contentDisplay="CENTER" text="word valu"
+           textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font name="System Bold Italic" size="24.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="playerAnswerLabel" alignment="CENTER" maxWidth="160.0" prefHeight="33.0" prefWidth="60.0"
+               promptText="enter letter">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </TextField>
+    <Label fx:id="playerChoiceLabel" alignment="CENTER" contentDisplay="CENTER" text="Player Choice"
+           textAlignment="CENTER">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="hideWordLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="258.0"
+           textAlignment="CENTER" textFill="#c31591">
+        <font>
+            <Font name="System Italic" size="24.0"/>
+        </font>
+    </Label>
+    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#playerChoice" text="Button"/>
+    <ImageView fx:id="imgHangman" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
+</VBox>
